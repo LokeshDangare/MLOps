@@ -1,5 +1,6 @@
-class Chatbook:
+class chatbook:
     def __init__(self):
+        # self.__name = "Lokesh"     # private attribute To access this create (user1.__chatbook__name) object 
         self.username = ""
         self.password = ""
         self.logged_in = False
@@ -68,4 +69,4 @@ class Chatbook:
         print("\n")
         self.menu()
 
-obj = Chatbook()
+user1 = chatbook()
