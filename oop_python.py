@@ -1,10 +1,18 @@
 class chatbook:
     def __init__(self):
-        # self.__name = "Lokesh"     # private attribute To access this create (user1.__chatbook__name) object 
+        self.__name = "Lokesh"     # private attribute To access this create (user1.__chatbook__name) object 
         self.username = ""
         self.password = ""
         self.logged_in = False
-        self.menu()
+        #self.menu()
+
+    # Getter and Setter for private attribute
+    def get_name(self):
+        return self.__name
+    
+    def set_name(self, value):
+        self.__name = value
+
 
     def menu(self):
         user_input = input(""" Welcome to Chatbook !! 
@@ -70,3 +78,6 @@ class chatbook:
         self.menu()
 
 user1 = chatbook()
+print(user1.get_name())
+user1.set_name("Dangare")
+print(user1.get_name())
